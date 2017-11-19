@@ -46,7 +46,7 @@ $('.faqBody h3').click(function() {
 //Image Fade
 
 $(window).on("load",function() {
-	$(window).scroll(function() {
+  $(window).scroll(function() {
 
     var header = $('#site-header').height(),
         windowScroll = $(window).scrollTop(),
