@@ -66,33 +66,6 @@ $(window).on("load",function() {
             
     });
 
-    /*
-    
-    var windowBottom = $(this).scrollTop() + $(this).innerHeight();
-
-    $(".fade").each(function() {
-      var objectBottom = $(this).offset().top + $(this).outerHeight();
-
-      if ($(this).find('img').hasClass('aboutImage1')) {
-        console.log(this);
-        console.log(objectBottom);
-        console.log(windowBottom);
-      }
-      
-      
-
-      if (objectBottom < windowBottom) {
-        if ($(this).css("opacity")==0) {$(this).fadeTo(150,1);
-        }
-      } 
-
-      else {
-        if ($(this).css("opacity")==1) {$(this).fadeTo(150,0);
-        }
-      }
-    });*/
-
-
   }).scroll();
 
 });
