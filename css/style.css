@@ -83,23 +83,23 @@ img:hover, img:active {
 }
 
 .bnwBar {
-	padding: .70rem 0 .70rem 0;
 	float: left;
 	margin-left: 7vw;
+	padding: .70rem 0 .70rem 0;
 }
 
 .menuOuter {
-	padding: .70rem 0 .70rem 0;
 	float: right;
-	width: 50vw;
+	width: 50%;
 	background-color: #eaeaea;
+	padding: .70rem 0 .70rem 0;
 	cursor: pointer;
 }
 
 .menu {
+	background-color: #eaeaea;
 	text-align: right;
 	margin-right: 7vw;
-	background-color: #eaeaea;
 }
 
 .bnw .wide {
@@ -113,10 +113,10 @@ img:hover, img:active {
 
 .navBar {
 	display: none;
-	background: #eaeaea;
-	padding: 0;
-	margin: 0;
 	width: 100%;
+	background: #eaeaea;
+	margin: 0;
+	padding: 0;
 	border-bottom: none;
 }
 
@@ -127,8 +127,8 @@ img:hover, img:active {
 
 .navContent ul {
 	display: block;
-	margin: auto;
 	text-align: center;
+	margin: auto;
 }
 
 .navContent ul li {
@@ -143,6 +143,7 @@ img:hover, img:active {
 .navContent ul li a:hover,
 .navContent ul li a:active {
 	border-bottom: 1.25px solid #141415;
+	padding-bottom: .75px;
 }
 
 .nav li a{
@@ -172,11 +173,11 @@ img:hover, img:active {
 }
 
 .coverLogo {
+	width: 100%;
 	position: relative;
 	-webkit-perspective: 1000px;
 			perspective: 1000px;
 	padding: 10% 5% 10% 5%;
-	width: 100%;
 	text-transform: uppercase;
 }
 
@@ -192,10 +193,10 @@ img:hover, img:active {
 }
   
 .bnwLogo h1 {
-	position: absolute;
-	font-size: 8.4vw;
 	width: 100%;
 	height: 100%;
+	position: absolute;
+	font-size: 8.4vw;
 	-webkit-backface-visibility: hidden;
 			backface-visibility: hidden; 
 }
@@ -246,9 +247,9 @@ img:hover, img:active {
 }
 
 .coverInfo {
-	margin: auto;
-	text-align: center;
 	max-width: 60%;
+	text-align: center;
+	margin: auto;
 	padding-top: calc(49vh + 2vw);
 }
 
@@ -270,49 +271,38 @@ img:hover, img:active {
 }
 
 .aboutTitle h2 {
-	height: 100%;
 	text-align: center;
 	margin: auto;
-}
-
-.aboutBody {
-	width: 100%;
-	margin-top: 0;
-	padding-bottom: 0;
 }
 
 .aboutBody h3 {
 	font-size: .6rem;
 	text-transform: uppercase;
-	margin-top: 20px;
-	margin-bottom: 7px;
-	margin-left: 14.5vw;
+	margin: 20px 0 7px 14.5vw;
 }
 
 .aboutBody p {
-	font-size: .85rem;
 	width: 65%;
+	font-size: .85rem;
 	margin: auto;
 	padding-top: 8px;
 }
 
 .aboutImages {
+	margin: 3rem 0 100px 0;
 	padding-right: 6.1%;
-	margin-top: 3rem;
-	margin-bottom: 100px;
-	height: auto;
 }
 
 .aboutImage1 {
-	margin-left: 6vw;
 	width: 60%;
+	margin-left: 6vw;
 	margin-bottom: 40px;
 }
 
 .aboutImage2 {
+	width: 60%;
 	margin-left: 37.8vw;
 	margin-bottom: -2.25rem;
-	width: 60%;
 }
 
 figcaption {
@@ -321,15 +311,13 @@ figcaption {
 
 .caption1 {
 	position: relative;
-	margin-left: calc(5.9vw + .5rem);
-	margin-top: -28px;
-	margin-bottom: 40px;
+	margin: -28px 0 40px calc(5.9vw + .5rem);
 }
 
 .caption2 {
 	transform: rotate(-90deg);
-	position: absolute;
 	transform-origin: top left;
+	position: absolute;
 	margin-left: calc(38vw - 1.25rem);
 	margin-top: 2rem;
 }
@@ -358,14 +346,14 @@ figcaption {
 
 .aboutLinks p a:hover,
 .aboutLinks p a:active {
-	border-bottom: 1.25px solid #eaeaea;
 	padding-bottom: 1px;
+	border-bottom: 1.25px solid #eaeaea;
 }
 
 .aboutLinks img {
-	padding-left: .4rem;
 	height: 1.3rem;
 	width: 1.3rem;
+	padding-left: .4rem;
 	padding-bottom: 2px;
 }
 
@@ -383,7 +371,6 @@ figcaption {
 }
 
 .programTitle h2 {
-	height: 100%;
 	text-align: center;
 	margin: auto;
 }
@@ -408,10 +395,10 @@ figcaption {
 }
 
 .programTimes {
+	display: none;
 	width: 100%;
 	font-size: .55rem;
 	margin-top: 25px;
-	display: none;
 }
 
 .activeTimes {
@@ -419,26 +406,25 @@ figcaption {
 }
 
 .programTimes p {
-	font-size: .72rem;
 	width: 65%;
-	margin: auto;
-	margin-bottom: 13px;
 	position: relative;
+	font-size: .72rem;
+	margin: auto auto 13px auto;
 	padding-left: .8vw;
 	padding-bottom: 15px;
 	border-bottom: 3px solid #eaeaea;
 }
 
 .programTimes p:first-child {
-	border-top: 3px solid #eaeaea;
 	padding-top: 15px;
+	border-top: 3px solid #eaeaea;
 }
 
 .programTimes p span {
-	padding-left: 16vw;
-	position: absolute;
 	display: block;
+	position: absolute;
 	margin-top: -1.1rem;
+	padding-left: 16vw;
 }
 
 
@@ -462,14 +448,8 @@ figcaption {
 }
 
 .faqTitle h2 {
-	height: 100%;
 	text-align: center;
 	margin: auto;
-}
-
-.faqBody {
-	width: 100%;
-	margin-top: 0;
 }
 
 .faqBody .h3Active {
@@ -477,25 +457,21 @@ figcaption {
 }
 
 .faqBody h3 {
-	font-size: .6rem;
 	max-width: 60%;
+	font-size: .6rem;
 	text-transform: uppercase;
-	margin-top: 20px;
-	margin-bottom: 2rem;
-	margin-left: 14.5vw;
+	margin: 20px 0 2rem 14.5vw;
 	color: #969696;
 	cursor: pointer;
 }
 
 .faqBody p {
-	font-size: .85rem;
 	width: 60%;
-	margin-left: 20%;
-	margin-top: calc(-2rem + 5px);
-	margin-bottom: 50px;
+	height: 1rem;
+	font-size: .85rem;
+	margin: calc(-2rem + 5px) 0 50px 20%;
 	padding-top: 8px;
 	visibility: hidden;
-	height: 1rem;
 }
 
 .faqBody .pActive {
@@ -511,6 +487,7 @@ figcaption {
 .faqBody p a:hover,
 .faqBody p a:active {
 	border-bottom: 1.25px solid #eaeaea;
+	padding-bottom: 1px;
 }
 
 
@@ -526,14 +503,12 @@ figcaption {
 }
 
 #tickets h2 {
-	height: 100%;
 	text-align: center;
 	margin: auto;
 }
 
 .ticketsBody {
 	width: 100%;
-	margin-top: 0;
 	padding-bottom: 2rem;
 }
 
@@ -548,37 +523,34 @@ figcaption {
 	font-size: .85rem;
 	width: 65%;
 	margin: auto;
-	margin-bottom: 0;
 }
 
 .ticketsPrices {
 	text-transform: uppercase;
-	width: 100%;
 	margin-bottom: 30px;
 }
 
 .ticketsPrices span {
-	padding-left: 14vw;
 	position: absolute;
 	display: block;
 	margin-top: -1.28rem;
+	padding-left: 14vw;
 }
 
 .ticketsEmail {
 	font-size: .55rem;
-	margin-left: 17.6%;
-	padding-top: 0;
-	margin-bottom: 15px;
+	margin: 0 15px 0 17.6%;
 }
 
 .ticketsEmail a {
-	text-decoration: none;
 	color: #eaeaea;
+	text-decoration: none;
 }
 
 .ticketsEmail a:hover,
 .ticketsEmail a:active {
 	border-bottom: 1.25px solid #eaeaea;
+	padding-bottom: .75px;
 }
 
 .ticketsText {
@@ -590,13 +562,13 @@ figcaption {
 }
 
 .ticketsText button {
-	margin-left: 17.6%;
 	background-color: #eaeaea;
-	padding: .35rem 1.2rem;
-	text-transform: uppercase;
 	font-size: .75rem;
-	color: #413932;
+	text-transform: uppercase;
 	text-decoration: none;
+	color: #413932;
+	margin-left: 17.6%;
+	padding: .35rem 1.2rem;
 	cursor: pointer;
 }
 
@@ -605,22 +577,22 @@ figcaption {
 
 footer {
 	height: 100%;
-	margin-top: 1.9rem;
-	border-top: 3px solid #eaeaea;
 	background-color: #141415;
+	border-top: 3px solid #eaeaea;
 	text-transform: uppercase;
-	padding-bottom: 1.7rem;
+	margin-top: 1.5rem;
+	padding-bottom: 1.3rem;
 }
 
 .footerTitle {
-	margin-top: 1rem;
-	margin-left: 7%;
 	font-size: 2.77rem;
+	margin-top: .5rem;
+	margin-left: 7%;
 }
 
 .footerLinks {
-	margin-top: -3.35rem;
 	font-size: .55rem;
+	margin-top: -3.35rem;
 	margin-left: 75%;
 }
 
@@ -632,12 +604,13 @@ footer {
 .footerLinks a:hover,
 .footerLinks a:active {
 	border-bottom: 1.25px solid #eaeaea;
+	padding-bottom: 1px;
 }
 
 .footerRights {
-	margin-left: 7.5%;
 	font-size: .44rem;
 	margin-top: -.6rem;
+	margin-left: 7.5%;
 }
 
 
@@ -646,8 +619,8 @@ footer {
 @media (min-width: 768px) {
 
 #site-header {
-	font-size: 24px;
 	height: auto;
+	font-size: 24px;
 }
 
 .menuOuter {
@@ -655,14 +628,14 @@ footer {
 }
 
 .bnwBar {
-	padding: 11px 0;
 	float: none;
+	padding: 11px 0;
 	margin-left: 0;
 }
 
 .bnwContent {
-	margin: auto;
 	text-align: center;
+	margin: auto;
 }
 
 .bnw .wide {
@@ -789,45 +762,45 @@ footer {
 
 .galleryImages {
 	display: block;
-	padding-right: 6.1%;
 	margin-top: 125px;
+	padding-right: 6.1%;
 	padding-bottom: 50px;
 	height: auto;
 }
 
 .image1 {
-	margin-left: 50vw;
 	width: 48%;
+	margin-left: 50vw;
 }
 
 .image2 {
-	margin-left: 5.3vw;
 	width: 30%;
 	margin-top: -30px;
+	margin-left: 5.3vw;
 }
 
 .image3 {
-	margin-left: 41.5vw;
 	width: 46%;
 	margin-top: -48px;
+	margin-left: 41.5vw;
 }
 
 .image4 {
-	margin-left: 18vw;
 	width: 25%;
 	margin-top: 90px;
+	margin-left: 18vw;
 }
 
 .image5 {
-	margin-left: 59vw;
 	width: 35%;
 	margin-top: -90px;
+	margin-left: 59vw;
 }
 
 .image6 {
-	margin-left: 10vw;
 	width: 48%;
 	margin-top: -35px;
+	margin-left: 10vw;
 }
 
 
@@ -854,12 +827,16 @@ footer {
 }
 
 .ticketsEmail {
-	padding-top: 15px;
 	margin-bottom: 30px;
+	padding-top: 15px;
 }
 
 
 /* Footer */
+
+footer {
+	padding-bottom: 1.8rem;
+}
 
 .footerTitle {
 	font-size: 3.6rem;
@@ -868,23 +845,12 @@ footer {
 
 .footerLinks {
 	font-size: .75rem;
-	margin-left: 78%;
 	margin-top: -4.4rem;
+	margin-left: 78%;
 }
 
 .footerRights {
 	font-size: .55rem;
-	margin-left: 7.5%;
 	margin-top: -.86rem;
-}
-
-/* Large devices (desktops, 992px and up) */
-
-@media (min-width: 992px) {
-
-}
-/* Extra large devices (large desktops, 1200px and up) */
-
-@media (min-width: 1200px) {
-
+	margin-left: 7.5%;
 }
