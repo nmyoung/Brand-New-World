@@ -1,0 +1,890 @@
+@import url('https://fonts.googleapis.com/css?family=Arimo:400, 700');
+
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	vertical-align: baseline;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+html {
+    -webkit-tap-highlight-color: transparent;
+    font-size: calc(.87em + 1.3vw);
+}
+
+body {
+	width: 100%;
+	background-color: #141415;
+	transition: background-color .5s linear;
+	font-family: 'Arimo', 'sans-serif';
+	font-weight: 400;
+	font-size: 1rem;
+	color: #eaeaea;
+	line-height: 1.55;
+	-webkit-font-smoothing: antialiased;
+	text-rendering: optimizeLegibility;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+	filter: grayscale(100%);
+    transition: filter 300ms; 
+}
+
+img:hover, img:active {
+	filter: none;
+}
+
+
+/* Header Jump Fix */
+
+.anchor {
+	display: block;
+	padding-top: 55px;
+	margin-top: -55px;
+}
+
+@media (min-width: 768px) {
+.anchor {
+	padding-top: 100px;
+	margin-top: -100px;
+}
+}
+
+
+/* Prevent Highlighting */
+
+.no-select {
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;     
+}
+
+
+/* Site Header */
+
+#site-header {
+	width: 100%;
+	position: fixed;
+	transition: all 0.3s ease;
+	background: #141415;
+	font-size: 1rem;
+	color: #141415;
+	text-transform: uppercase;
+	top: 0;
+	z-index: 1000;
+}
+
+.bnwBar {
+	padding: .70rem 0 .70rem 0;
+	float: left;
+	margin-left: 7vw;
+}
+
+.menuOuter {
+	padding: .70rem 0 .70rem 0;
+	float: right;
+	width: 50vw;
+	background-color: #eaeaea;
+	cursor: pointer;
+}
+
+.menu {
+	text-align: right;
+	margin-right: 7vw;
+	background-color: #eaeaea;
+}
+
+.bnw .wide {
+	display: none;
+}
+
+.bnw div a {
+	text-decoration: none;
+	color: #eaeaea;
+}
+
+.navBar {
+	display: none;
+	background: #eaeaea;
+	padding: 0;
+	margin: 0;
+	width: 100%;
+	border-bottom: none;
+}
+
+.navContent {
+	margin: 0 4px;
+	padding: .48rem 0 calc(.57rem - 3px) 0;
+}
+
+.navContent ul {
+	display: block;
+	margin: auto;
+	text-align: center;
+}
+
+.navContent ul li {
+	display: inline-block;
+	padding-right: 4vw;
+}
+
+.navContent ul li:last-child {
+	padding-right: 0;
+}
+
+.navContent ul li a:hover,
+.navContent ul li a:active {
+	border-bottom: 1.25px solid #141415;
+}
+
+.nav li a{
+	text-decoration: none;
+	color: #141415;
+}
+
+
+/* Cover Picture */
+
+#cover-pic {
+	height: calc(100vh + 3px);
+	background-image: url("../img/bnw.jpg");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat; 
+	border-bottom: 3px solid #eaeaea;
+	color: #eaeaea;
+}
+
+
+.coverCenter {
+	position: relative;
+	top: 45%;
+	-webkit-transform: translateY(-50%);
+			transform: translateY(-50%);
+}
+
+.coverLogo {
+	position: relative;
+	-webkit-perspective: 1000px;
+			perspective: 1000px;
+	padding: 10% 5% 10% 5%;
+	width: 100%;
+	text-transform: uppercase;
+}
+
+.bnwLogo {
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	-webkit-transform-style: preserve-3d;
+			transform-style: preserve-3d;
+	transition: all 0s linear;
+	-webkit-animation: rotation 13s linear infinite;
+			animation: rotation 13s linear infinite;
+}
+  
+.bnwLogo h1 {
+	position: absolute;
+	font-size: 8.4vw;
+	width: 100%;
+	height: 100%;
+	-webkit-backface-visibility: hidden;
+			backface-visibility: hidden; 
+}
+
+.bnwText {
+	text-transform: uppercase;
+	line-height: 1;
+	color: #E2E2E2;
+	transition: all .5s ease-in-out;
+	margin: 0;
+}
+
+.back {
+	display: block;
+	-webkit-transform: rotateY(360deg);
+			transform: rotateY(180deg);
+	box-sizing: border-box;
+}
+
+.bnwText::after {
+	display: none; 
+}
+
+
+@-webkit-keyframes rotation {
+	0% {
+	-webkit-transform: rotateY(0deg);
+			transform: rotateY(0deg); }
+	50% {
+    -webkit-transform: rotateY(180deg);
+            transform: rotateY(180deg); }
+	100% {
+    -webkit-transform: rotateY(360deg);
+            transform: rotateY(360deg); } 
+}
+
+
+@keyframes rotation {
+	0% {
+	-webkit-transform: rotateY(0deg);
+			transform: rotateY(0deg); }
+	50% {
+    -webkit-transform: rotateY(180deg);
+			transform: rotateY(180deg); }
+	100% {
+    -webkit-transform: rotateY(360deg);
+			transform: rotateY(360deg); } 
+}
+
+.coverInfo {
+	margin: auto;
+	text-align: center;
+	max-width: 60%;
+	padding-top: calc(49vh + 2vw);
+}
+
+.coverInfo h3 {
+	font-size: .94rem;
+}
+
+
+/* About Section */
+
+#about {
+	height: 100%;
+	margin-bottom: 80px;
+}
+
+.aboutTitle {
+	width: 100%;
+	margin-top: 65px;
+}
+
+.aboutTitle h2 {
+	height: 100%;
+	text-align: center;
+	margin: auto;
+}
+
+.aboutBody {
+	width: 100%;
+	margin-top: 0;
+	padding-bottom: 0;
+}
+
+.aboutBody h3 {
+	font-size: .6rem;
+	text-transform: uppercase;
+	margin-top: 20px;
+	margin-bottom: 7px;
+	margin-left: 14.5vw;
+}
+
+.aboutBody p {
+	font-size: .85rem;
+	width: 65%;
+	margin: auto;
+	padding-top: 8px;
+}
+
+.aboutImages {
+	padding-right: 6.1%;
+	margin-top: 3rem;
+	margin-bottom: 100px;
+	height: auto;
+}
+
+.aboutImage1 {
+	margin-left: 6vw;
+	width: 60%;
+	margin-bottom: 40px;
+}
+
+.aboutImage2 {
+	margin-left: 37.8vw;
+	margin-bottom: -2.25rem;
+	width: 60%;
+}
+
+figcaption {
+	font-size: .6rem;
+}
+
+.caption1 {
+	position: relative;
+	margin-left: calc(5.9vw + .5rem);
+	margin-top: -28px;
+	margin-bottom: 40px;
+}
+
+.caption2 {
+	transform: rotate(-90deg);
+	position: absolute;
+	transform-origin: top left;
+	margin-left: calc(38vw - 1.25rem);
+	margin-top: 2rem;
+}
+
+.aboutLinks {
+	margin-top: 2.25rem;
+}
+
+.aboutLinks p {
+	font-size: .55rem;
+	margin-top: -5px;
+	margin-bottom: 10px;
+	border-top: 3px solid #eaeaea;
+}
+
+.lower {
+	padding-bottom: 5px;
+	border-bottom: 3px solid #eaeaea;
+}
+
+.aboutLinks p a {
+	color: #eaeaea;
+	text-decoration: none;
+	margin-left: .8vw;
+}
+
+.aboutLinks p a:hover,
+.aboutLinks p a:active {
+	border-bottom: 1.25px solid #eaeaea;
+	padding-bottom: 1px;
+}
+
+.aboutLinks img {
+	padding-left: .4rem;
+	height: 1.3rem;
+	width: 1.3rem;
+	padding-bottom: 2px;
+}
+
+
+/* Program Section */
+
+#program {
+	height: 100%;
+	margin-top: -83px;
+}
+
+.programTitle {
+	width: 100%;
+	margin-top: 65px;
+}
+
+.programTitle h2 {
+	height: 100%;
+	text-align: center;
+	margin: auto;
+}
+
+.programDates {
+	margin-left: 14.5vw;
+}
+
+.programDates h3 {
+	display: inline-block;
+	font-size: .6rem;
+	text-transform: uppercase;
+	margin-top: 20px;
+	margin-bottom: 7px;
+	padding-right: 1rem;
+	color: #969696;
+	cursor: pointer;
+}
+
+.programDates .h3Active {
+	color: #eaeaea;
+}
+
+.programTimes {
+	width: 100%;
+	font-size: .55rem;
+	margin-top: 25px;
+	display: none;
+}
+
+.activeTimes {
+	display: inline-block;
+}
+
+.programTimes p {
+	font-size: .72rem;
+	width: 65%;
+	margin: auto;
+	margin-bottom: 13px;
+	position: relative;
+	padding-left: .8vw;
+	padding-bottom: 15px;
+	border-bottom: 3px solid #eaeaea;
+}
+
+.programTimes p:first-child {
+	border-top: 3px solid #eaeaea;
+	padding-top: 15px;
+}
+
+.programTimes p span {
+	padding-left: 16vw;
+	position: absolute;
+	display: block;
+	margin-top: -1.1rem;
+}
+
+
+/* Gallery */
+
+.galleryImages {
+	display: none;
+}
+
+
+/* FAQ */
+
+#faq {
+	height: 100%;
+	margin-top: 50px;
+}
+
+.faqTitle {
+	width: 100%;
+	margin-top: 65px;
+}
+
+.faqTitle h2 {
+	height: 100%;
+	text-align: center;
+	margin: auto;
+}
+
+.faqBody {
+	width: 100%;
+	margin-top: 0;
+}
+
+.faqBody .h3Active {
+	color: #eaeaea;
+}
+
+.faqBody h3 {
+	font-size: .6rem;
+	max-width: 60%;
+	text-transform: uppercase;
+	margin-top: 20px;
+	margin-bottom: 2rem;
+	margin-left: 14.5vw;
+	color: #969696;
+	cursor: pointer;
+}
+
+.faqBody p {
+	font-size: .85rem;
+	width: 60%;
+	margin-left: 20%;
+	margin-top: calc(-2rem + 5px);
+	margin-bottom: 50px;
+	padding-top: 8px;
+	visibility: hidden;
+	height: 1rem;
+}
+
+.faqBody .pActive {
+	visibility: visible;
+	height: auto;
+}
+
+.faqBody p a {
+	color: #eaeaea;
+	text-decoration: none;
+}
+
+.faqBody p a:hover,
+.faqBody p a:active {
+	border-bottom: 1.25px solid #eaeaea;
+}
+
+
+/* Tickets */
+
+#tickets {
+	height: 100%;
+}
+
+.ticketsTitle {
+	width: 100%;
+	margin-top: 65px;
+}
+
+#tickets h2 {
+	height: 100%;
+	text-align: center;
+	margin: auto;
+}
+
+.ticketsBody {
+	width: 100%;
+	margin-top: 0;
+	padding-bottom: 2rem;
+}
+
+.ticketsBody h3 {
+	font-size: .6rem;
+	text-transform: uppercase;
+	margin-top: 20px;
+	margin-left: 14.5vw;
+}
+
+.ticketsBody p {
+	font-size: .85rem;
+	width: 65%;
+	margin: auto;
+	margin-bottom: 0;
+}
+
+.ticketsPrices {
+	text-transform: uppercase;
+	width: 100%;
+	margin-bottom: 30px;
+}
+
+.ticketsPrices span {
+	padding-left: 14vw;
+	position: absolute;
+	display: block;
+	margin-top: -1.28rem;
+}
+
+.ticketsEmail {
+	font-size: .55rem;
+	margin-left: 17.6%;
+	padding-top: 0;
+	margin-bottom: 15px;
+}
+
+.ticketsEmail a {
+	text-decoration: none;
+	color: #eaeaea;
+}
+
+.ticketsEmail a:hover,
+.ticketsEmail a:active {
+	border-bottom: 1.25px solid #eaeaea;
+}
+
+.ticketsText {
+	padding-top: 15px;
+}
+
+.ticketsText p {
+	margin-bottom: 1.8rem;
+}
+
+.ticketsText button {
+	margin-left: 17.6%;
+	background-color: #eaeaea;
+	padding: .35rem 1.2rem;
+	text-transform: uppercase;
+	font-size: .75rem;
+	color: #413932;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+
+/* Footer */
+
+footer {
+	height: 100%;
+	margin-top: 1.9rem;
+	border-top: 3px solid #eaeaea;
+	background-color: #141415;
+	text-transform: uppercase;
+	padding-bottom: 1.7rem;
+}
+
+.footerTitle {
+	margin-top: 1rem;
+	margin-left: 7%;
+	font-size: 2.77rem;
+}
+
+.footerLinks {
+	margin-top: -3.35rem;
+	font-size: .55rem;
+	margin-left: 75%;
+}
+
+.footerLinks a {
+	color: #eaeaea;
+	text-decoration: none;
+}
+
+.footerLinks a:hover,
+.footerLinks a:active {
+	border-bottom: 1.25px solid #eaeaea;
+}
+
+.footerRights {
+	margin-left: 7.5%;
+	font-size: .44rem;
+	margin-top: -.6rem;
+}
+
+
+/* Small devices (tablets, 768px and up) */
+
+@media (min-width: 768px) {
+
+#site-header {
+	font-size: 24px;
+	height: auto;
+}
+
+.menuOuter {
+	display: none;
+}
+
+.bnwBar {
+	padding: 11px 0;
+	float: none;
+	margin-left: 0;
+}
+
+.bnwContent {
+	margin: auto;
+	text-align: center;
+}
+
+.bnw .wide {
+	display: block;
+}
+
+.bnw .thin {
+	display: none;
+}
+
+.navBar {
+	display: inline-block;
+}
+
+.navContent {
+	margin: 0 100px;
+	padding: 6px 0;
+}
+
+.navContent ul li {
+	padding-right: 60px;
+}
+
+
+/* Cover Picture */
+
+.coverCenter {
+	top: 47%;
+}
+
+@media (min-width: 1000px) {
+	.coverCenter {
+		top: 44%;
+	}
+}
+@media (min-width: 1200px) {
+	.coverCenter {
+		top: 42%;
+	}
+}
+@media (min-height: 750px) {
+	.coverCenter {
+		top: 42%;
+	}
+}
+@media (min-height: 900px) {
+	.coverCenter {
+		top: 41%;
+	}
+}
+
+.coverLogo {
+	padding: 10vh 10vw 10vh 10vw;
+}
+  
+.bnwLogo h1 {
+	font-size: 7.75vw;
+}
+@media (min-width: 1000px) {
+	.bnwLogo h1 {
+		font-size: 7.5vw;
+	}
+}
+
+.coverInfo {
+	max-width: 58%;
+	padding-top: calc(50vh + 3vw);
+}
+@media (min-height: 750px) {
+	.coverInfo {
+		padding-top: 55vh;
+	}
+}
+
+.coverInfo h3 {
+	font-size: 1rem;
+}
+
+
+/* About */
+
+.aboutTitle {
+	margin-top: 80px;
+}
+
+.aboutImages {
+	margin-top: 100px;
+}
+
+.aboutImage2 {
+	margin-bottom: -.5rem;
+}
+
+.caption1 {
+	margin-bottom: 0;
+}
+
+.caption2 {
+	margin-top: 0;
+}
+
+.aboutLinks img {
+	height: 1.5rem;
+	width: 1.5rem;
+	padding-bottom: 1px;
+}
+
+
+/* Program */
+
+.programTitle {
+	margin-top: 80px;
+}
+
+.programDates {
+	margin-left: 14.2vw;
+}
+
+.programTimes p span {
+	padding-left: 14vw;
+}
+
+/* Gallery */
+
+.galleryImages {
+	display: block;
+	padding-right: 6.1%;
+	margin-top: 125px;
+	padding-bottom: 50px;
+	height: auto;
+}
+
+.image1 {
+	margin-left: 50vw;
+	width: 48%;
+}
+
+.image2 {
+	margin-left: 5.3vw;
+	width: 30%;
+	margin-top: -30px;
+}
+
+.image3 {
+	margin-left: 41.5vw;
+	width: 46%;
+	margin-top: -48px;
+}
+
+.image4 {
+	margin-left: 18vw;
+	width: 25%;
+	margin-top: 90px;
+}
+
+.image5 {
+	margin-left: 59vw;
+	width: 35%;
+	margin-top: -90px;
+}
+
+.image6 {
+	margin-left: 10vw;
+	width: 48%;
+	margin-top: -35px;
+}
+
+
+/* FAQ */
+
+#faq {
+	margin-top: 0;
+}
+
+.faqTitle {
+	width: 100%;
+	margin-top: 80px;
+}
+
+
+/* Tickets */
+
+#tickets {
+	margin-top: 5px;
+}
+
+.ticketsTitle {
+	margin-top: 80px;
+}
+
+.ticketsEmail {
+	padding-top: 15px;
+	margin-bottom: 30px;
+}
+
+
+/* Footer */
+
+.footerTitle {
+	font-size: 3.6rem;
+	margin-top: 1rem;
+}
+
+.footerLinks {
+	font-size: .75rem;
+	margin-left: 78%;
+	margin-top: -4.4rem;
+}
+
+.footerRights {
+	font-size: .55rem;
+	margin-left: 7.5%;
+	margin-top: -.86rem;
+}
+
+/* Large devices (desktops, 992px and up) */
+
+@media (min-width: 992px) {
+
+}
+/* Extra large devices (large desktops, 1200px and up) */
+
+@media (min-width: 1200px) {
+
+}
