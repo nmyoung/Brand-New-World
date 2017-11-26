@@ -77,10 +77,10 @@ var waypoint = new Waypoint({
 	element: document.getElementById('about'),
 		handler: function(direction) {
 			if(direction === 'down'){
-        $('#site-header').css('background-color', '#273328');
-				$('#site-header .navBar .navContent .nav li a').css('color', '#273328');
-        $('#site-header .menuOuter .menu').css('color', '#273328');
-        $('body').css('background-color', '#273328');
+        $('#site-header').css('background-color', '#26331A');
+				$('#site-header .navBar .navContent .nav li a').css('color', '#26331A');
+        $('#site-header .menuOuter .menu').css('color', '#26331A');
+        $('body').css('background-color', '#26331A');
 			}
 			else if(direction === 'up'){
 				$('#site-header').css('background-color', '#141415');
@@ -97,16 +97,16 @@ var waypoint2 = new Waypoint({
   element: document.getElementById('program'),
     handler: function(direction) {
       if(direction === 'down'){
-        $('#site-header').css('background-color', '#34282F');
-        $('#site-header .navBar .navContent .nav li a').css('color', '#34282F');
-        $('#site-header .menuOuter .menu').css('color', '#34282F');
-        $('body').css('background-color', '#34282F');
+        $('#site-header').css('background-color', '#3b1e27');
+        $('#site-header .navBar .navContent .nav li a').css('color', '#3b1e27');
+        $('#site-header .menuOuter .menu').css('color', '#3b1e27');
+        $('body').css('background-color', '#3b1e27');
       }
       else if(direction === 'up'){
-        $('#site-header').css('background-color', '#273328');
-        $('#site-header .navBar .navContent .nav li a').css('color', '#273328');
-        $('#site-header .menuOuter .menu').css('color', '#273328');
-        $('body').css('background-color', '#273328');
+        $('#site-header').css('background-color', '#2c3b1e');
+        $('#site-header .navBar .navContent .nav li a').css('color', '#2c3b1e');
+        $('#site-header .menuOuter .menu').css('color', '#2c3b1e');
+        $('body').css('background-color', '#2c3b1e');
       }
 
     },
@@ -117,36 +117,16 @@ var waypoint3 = new Waypoint({
   element: document.getElementById('faq'),
     handler: function(direction) {
       if(direction === 'down'){
-        $('#site-header').css('background-color', '#272833');
-        $('#site-header .navBar .navContent .nav li a').css('color', '#272833');
-        $('#site-header .menuOuter .menu').css('color', '#272833');
-        $('body').css('background-color', '#272833');
+        $('#site-header').css('background-color', '#1e3141');
+        $('#site-header .navBar .navContent .nav li a').css('color', '#1e3141');
+        $('#site-header .menuOuter .menu').css('color', '#1e3141');
+        $('body').css('background-color', '#1e3141');
       }
       else if(direction === 'up'){
-        $('#site-header').css('background-color', '#34282F');
-        $('#site-header .navBar .navContent .nav li a').css('color', '#34282F');
-        $('#site-header .menuOuter .menu').css('color', '#34282F');
-        $('body').css('background-color', '#34282F');
-      }
-
-    },
-    offset: '33%'
-  })
-
-var waypoint4 = new Waypoint({
-  element: document.getElementById('tickets'),
-    handler: function(direction) {
-      if(direction === 'down'){
-        $('#site-header').css('background-color', '#413932');
-        $('#site-header .navBar .navContent .nav li a').css('color', '#413932');
-        $('#site-header .menuOuter .menu').css('color', '#413932');
-        $('body').css('background-color', '#413932');
-      }
-      else if(direction === 'up'){
-        $('#site-header').css('background-color', '#272833');
-        $('#site-header .navBar .navContent .nav li a').css('color', '#272833');
-        $('#site-header .menuOuter .menu').css('color', '#272833');
-        $('body').css('background-color', '#272833');
+        $('#site-header').css('background-color', '#3b1e27');
+        $('#site-header .navBar .navContent .nav li a').css('color', '#3b1e27');
+        $('#site-header .menuOuter .menu').css('color', '#3b1e27');
+        $('body').css('background-color', '#3b1e27');
       }
 
     },

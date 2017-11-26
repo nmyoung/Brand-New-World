@@ -29,12 +29,12 @@ body {
 }
 
 ul {
-    list-style: none;
+	list-style: none;
 }
 
 img {
 	filter: grayscale(100%);
-    transition: filter 300ms; 
+	transition: filter 300ms; 
 }
 
 img:hover, img:active {
@@ -66,7 +66,6 @@ img:hover, img:active {
 	-ms-user-select: none;
 	user-select: none;     
 }
-
 
 /* Site Header */
 
@@ -302,7 +301,7 @@ img:hover, img:active {
 .aboutImage2 {
 	width: 60%;
 	margin-left: 37.8vw;
-	margin-bottom: -2.25rem;
+	margin-bottom: -2.25rem;;
 }
 
 figcaption {
@@ -320,6 +319,10 @@ figcaption {
 	position: absolute;
 	margin-left: calc(38vw - 1.25rem);
 	margin-top: 2rem;
+}
+
+#map {
+	display: none;
 }
 
 .aboutLinks {
@@ -539,7 +542,7 @@ figcaption {
 
 .ticketsEmail {
 	font-size: .55rem;
-	margin: 0 15px 0 17.6%;
+	margin: 0 15px 15px 17.6%;
 }
 
 .ticketsEmail a {
@@ -566,7 +569,7 @@ figcaption {
 	font-size: .75rem;
 	text-transform: uppercase;
 	text-decoration: none;
-	color: #413932;
+	color: #1e3141;
 	margin-left: 17.6%;
 	padding: .35rem 1.2rem;
 	cursor: pointer;
@@ -737,6 +740,14 @@ footer {
 	margin-top: 0;
 }
 
+#map {
+	display: block;
+	margin: 1.75rem auto auto auto;
+	width: 65%;
+	height: 13rem;
+	border: none;
+}
+
 .aboutLinks img {
 	height: 1.5rem;
 	width: 1.5rem;
@@ -840,7 +851,7 @@ footer {
 
 .footerTitle {
 	font-size: 3.6rem;
-	margin-top: 1rem;
+	margin-top: .9rem;
 }
 
 .footerLinks {
