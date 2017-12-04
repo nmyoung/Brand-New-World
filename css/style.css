@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Arimo:400, 700');
+@import url('https://fonts.googleapis.com/css?family=Arimo:400, 400i, 700');
 
 * {
 	margin: 0;
@@ -276,6 +276,7 @@ img:hover, img:active {
 
 .aboutBody h3 {
 	font-size: .6rem;
+	font-style: italic;
 	text-transform: uppercase;
 	margin: 20px 0 7px 14.5vw;
 }
@@ -385,6 +386,7 @@ figcaption {
 .programDates h3 {
 	display: inline-block;
 	font-size: .6rem;
+	font-style: italic;
 	text-transform: uppercase;
 	margin-top: 20px;
 	margin-bottom: 7px;
@@ -462,6 +464,7 @@ figcaption {
 .faqBody h3 {
 	max-width: 60%;
 	font-size: .6rem;
+	font-style: italic;
 	text-transform: uppercase;
 	margin: 20px 0 2rem 14.5vw;
 	color: #969696;
@@ -517,6 +520,7 @@ figcaption {
 
 .ticketsBody h3 {
 	font-size: .6rem;
+	font-style: italic;
 	text-transform: uppercase;
 	margin-top: 20px;
 	margin-left: 14.5vw;
